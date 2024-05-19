@@ -1,0 +1,129 @@
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#timer {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Prevent text selection */
+}
+
+#code {
+    list-style: none;
+    padding: 0;
+}
+
+.draggable {
+    cursor: grab;
+    padding: 10px;
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.dragging {
+    cursor: grabbing;
+}
+
+.Btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Btn:hover {
+    background-color: #0056b3;
+}
+
+.output{
+    position: fixed;
+    color: white;
+    background-color: #1f1f24;
+    width: 250px;
+    right: 10px;
+    border: 0.1px solid black;
+}
+.output h3{
+    font-size: 25px;
+    font-weight: 100;
+    margin-left: 30px;
+}
+
+.adds{
+    background-color: rgba(255, 255, 255, 0.816);
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 700px;
+    height: 170px;
+    bottom: 0px;
+    gap: 50px;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid;
+    margin: 100px  auto 0px auto;
+}
+.add1{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 30px;
+}
+.add2{
+    height: 100px;
+    width: 100px;
+}
+.add3{
+    height: 100px;
+    width: 100px;
+}
+.add4{
+    height: 100px;
+    width: 100px;
+}
+.add5{
+    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+}
+.add1 h2,.add2 h2, .add3 h2,.add4 h2,.add5 h2{
+    color: #007bff;
+    font-weight: bold;
+}
+
+.results h2{
+    font-size: 20px;
+    background-color: #c6c6c6;
+    margin-top: 30px;
+}
+
+.results p{
+    display: inline;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px) {
+    .add1,.add2{
+        display: none;
+    }
+    .output{
+        position: relative;
+        margin: 5px auto;
+    }
+}
